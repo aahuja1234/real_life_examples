@@ -20,6 +20,6 @@ if area_code:
     except: 
         print("You might want to check your area code. In the US, area codes are 5 digits long")
 
-# When a user enters no value, 0 or None; it prints this message
+# When a user enters no value; it prints this message
 else:
     print("I said, Enter an area code!! Please!!")
