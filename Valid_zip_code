@@ -1,0 +1,25 @@
+# Calls a variable called area_code and asks the user to input area code
+area_code = input ("Please enter your area code: ")
+
+# Excecues if a valid area code is entered (if anything is entered)
+if area_code:
+    # Tries to match the value with an area code
+    try:
+        # to satisfy that area_code needs to be an integer
+        int(area_code)
+        # to satisfy the 5 digit code for area code
+        if len(area_code) == 5:
+            # When a user enters correct entry, it prints their area code
+            print("Your code is: " + area_code)
+
+        # When a user enters digits but enters less or more than 5 digits
+        else:
+            print("Area code numbers are 5 digits long")
+
+    # When the user enters anything but digits (strings, floats, etc)
+    except: 
+        print("You might want to check your area code. In the US, area codes are 5 digits long")
+
+# When a user enters no value, 0 or None; it prints this message
+else:
+    print("I said, Enter an area code!! Please!!")
